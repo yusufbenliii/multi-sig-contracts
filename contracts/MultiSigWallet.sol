@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
-import "./Interfaces/IMultiSigFactory.sol";
+import "./interfaces/IMultiSigFactory.sol";
 
 contract MultiSigWallet is ReentrancyGuard {
     address public admin;
@@ -37,6 +37,7 @@ contract MultiSigWallet is ReentrancyGuard {
         uint256 _walletId,
         string memory _description
     ) {
+        require(msg.sender == _factoryAddress);
         admin = _admin;
         multiSigFactory = IMultiSigFactory(_factoryAddress);
         walletId = _walletId;

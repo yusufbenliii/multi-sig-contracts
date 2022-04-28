@@ -19,10 +19,16 @@ contract MultiSigFactory {
         _;
     }
 
-    mapping(uint256 => address) internal walletIdToWalletAddress;
+    mapping(uint256 => address) public walletIdToWalletAddress;
     mapping(uint256 => address) public ownerOf;
-    mapping(address => uint256[]) internal memberToWalletIds;
+    mapping(address => uint256[]) public memberToWalletIds;
     mapping(address => bool) public isWallet;
+
+    event WalletCreated(
+        address creator,
+        uint256 walletId,
+        address newWalletAddress
+    );
 
     function getWalletAddresses_msgSender()
         public
@@ -69,6 +75,7 @@ contract MultiSigFactory {
         ownerOf[walletId] = msg.sender;
         memberToWalletIds[msg.sender].push(walletId);
         walletIdCounter++;
+        emit WalletCreated(msg.sender, walletId, newWalletAddress);
     }
 
     function addMember(uint256 walletId, address member) public {

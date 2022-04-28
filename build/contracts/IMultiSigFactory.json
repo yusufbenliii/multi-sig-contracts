@@ -20,7 +20,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"walletId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"member\",\"type\":\"address\"}],\"name\":\"addMember\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Interfaces/IMultiSigFactory.sol\":\"IMultiSigFactory\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Interfaces/IMultiSigFactory.sol\":{\"keccak256\":\"0x03ff72315adf5ab38ab29f5ee993eed745383ec68bd79bbafc4fb79a0c5aaff4\",\"license\":\"No License\",\"urls\":[\"bzz-raw://56f202d00dd36501b10fa75546a898d321b3e2f2661af6bdb9415ff680443f6d\",\"dweb:/ipfs/QmSA2nGdtppcWPNF2jPpEe4ysooEweYwBJCamC33nfUyXt\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"walletId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"member\",\"type\":\"address\"}],\"name\":\"addMember\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/IMultiSigFactory.sol\":\"IMultiSigFactory\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/IMultiSigFactory.sol\":{\"keccak256\":\"0x03ff72315adf5ab38ab29f5ee993eed745383ec68bd79bbafc4fb79a0c5aaff4\",\"license\":\"No License\",\"urls\":[\"bzz-raw://56f202d00dd36501b10fa75546a898d321b3e2f2661af6bdb9415ff680443f6d\",\"dweb:/ipfs/QmSA2nGdtppcWPNF2jPpEe4ysooEweYwBJCamC33nfUyXt\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -29,20 +29,20 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "//SPDX-License-Identifier: No License\n\npragma solidity ^0.8.0;\n\ninterface IMultiSigFactory {\n    function addMember(uint256 walletId, address member) external;\n}\n",
-  "sourcePath": "/home/yusufbenli/codes/multi_sig/contracts/Interfaces/IMultiSigFactory.sol",
+  "sourcePath": "/home/yusufbenli/codes/github/multi-sig-contracts/contracts/interfaces/IMultiSigFactory.sol",
   "ast": {
-    "absolutePath": "project:/contracts/Interfaces/IMultiSigFactory.sol",
+    "absolutePath": "project:/contracts/interfaces/IMultiSigFactory.sol",
     "exportedSymbols": {
       "IMultiSigFactory": [
-        127
+        1641
       ]
     },
-    "id": 128,
+    "id": 1642,
     "license": "No License",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 119,
+        "id": 1633,
         "literals": [
           "solidity",
           "^",
@@ -50,7 +50,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "39:23:2"
+        "src": "39:23:9"
       },
       {
         "abstract": false,
@@ -59,36 +59,36 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 127,
+        "id": 1641,
         "linearizedBaseContracts": [
-          127
+          1641
         ],
         "name": "IMultiSigFactory",
-        "nameLocation": "74:16:2",
+        "nameLocation": "74:16:9",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "functionSelector": "74d0a676",
-            "id": 126,
+            "id": 1640,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "addMember",
-            "nameLocation": "106:9:2",
+            "nameLocation": "106:9:9",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 124,
+              "id": 1638,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 121,
+                  "id": 1635,
                   "mutability": "mutable",
                   "name": "walletId",
-                  "nameLocation": "124:8:2",
+                  "nameLocation": "124:8:9",
                   "nodeType": "VariableDeclaration",
-                  "scope": 126,
-                  "src": "116:16:2",
+                  "scope": 1640,
+                  "src": "116:16:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -96,10 +96,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 120,
+                    "id": 1634,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "116:7:2",
+                    "src": "116:7:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -109,13 +109,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 123,
+                  "id": 1637,
                   "mutability": "mutable",
                   "name": "member",
-                  "nameLocation": "142:6:2",
+                  "nameLocation": "142:6:9",
                   "nodeType": "VariableDeclaration",
-                  "scope": 126,
-                  "src": "134:14:2",
+                  "scope": 1640,
+                  "src": "134:14:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -123,10 +123,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 122,
+                    "id": 1636,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "134:7:2",
+                    "src": "134:7:9",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -136,41 +136,41 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "115:34:2"
+              "src": "115:34:9"
             },
             "returnParameters": {
-              "id": 125,
+              "id": 1639,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "158:0:2"
+              "src": "158:0:9"
             },
-            "scope": 127,
-            "src": "97:62:2",
+            "scope": 1641,
+            "src": "97:62:9",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 128,
-        "src": "64:97:2",
+        "scope": 1642,
+        "src": "64:97:9",
         "usedErrors": []
       }
     ],
-    "src": "39:123:2"
+    "src": "39:123:9"
   },
   "legacyAST": {
-    "absolutePath": "project:/contracts/Interfaces/IMultiSigFactory.sol",
+    "absolutePath": "project:/contracts/interfaces/IMultiSigFactory.sol",
     "exportedSymbols": {
       "IMultiSigFactory": [
-        127
+        1641
       ]
     },
-    "id": 128,
+    "id": 1642,
     "license": "No License",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 119,
+        "id": 1633,
         "literals": [
           "solidity",
           "^",
@@ -178,7 +178,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "39:23:2"
+        "src": "39:23:9"
       },
       {
         "abstract": false,
@@ -187,36 +187,36 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 127,
+        "id": 1641,
         "linearizedBaseContracts": [
-          127
+          1641
         ],
         "name": "IMultiSigFactory",
-        "nameLocation": "74:16:2",
+        "nameLocation": "74:16:9",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "functionSelector": "74d0a676",
-            "id": 126,
+            "id": 1640,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "addMember",
-            "nameLocation": "106:9:2",
+            "nameLocation": "106:9:9",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 124,
+              "id": 1638,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 121,
+                  "id": 1635,
                   "mutability": "mutable",
                   "name": "walletId",
-                  "nameLocation": "124:8:2",
+                  "nameLocation": "124:8:9",
                   "nodeType": "VariableDeclaration",
-                  "scope": 126,
-                  "src": "116:16:2",
+                  "scope": 1640,
+                  "src": "116:16:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -224,10 +224,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 120,
+                    "id": 1634,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "116:7:2",
+                    "src": "116:7:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -237,13 +237,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 123,
+                  "id": 1637,
                   "mutability": "mutable",
                   "name": "member",
-                  "nameLocation": "142:6:2",
+                  "nameLocation": "142:6:9",
                   "nodeType": "VariableDeclaration",
-                  "scope": 126,
-                  "src": "134:14:2",
+                  "scope": 1640,
+                  "src": "134:14:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -251,10 +251,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 122,
+                    "id": 1636,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "134:7:2",
+                    "src": "134:7:9",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -264,35 +264,35 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "115:34:2"
+              "src": "115:34:9"
             },
             "returnParameters": {
-              "id": 125,
+              "id": 1639,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "158:0:2"
+              "src": "158:0:9"
             },
-            "scope": 127,
-            "src": "97:62:2",
+            "scope": 1641,
+            "src": "97:62:9",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 128,
-        "src": "64:97:2",
+        "scope": 1642,
+        "src": "64:97:9",
         "usedErrors": []
       }
     ],
-    "src": "39:123:2"
+    "src": "39:123:9"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.8.11+commit.d7f03943.Emscripten.clang"
+    "version": "0.8.13+commit.abaa5c0e.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.4.5",
-  "updatedAt": "2022-04-17T11:47:08.112Z",
+  "updatedAt": "2022-04-28T00:21:20.085Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
